@@ -28,7 +28,7 @@
 }
 
 .accordion {
-    @apply h-full w-full border-b-2 border-light-pink py-[1.125rem] last:border-b-0 last:pb-0  sm:py-[1.25rem];
+    @apply h-full w-full cursor-pointer border-b-2 border-light-pink py-[1.125rem] last:border-b-0  last:pb-0 sm:py-[1.25rem];
 }
 
 .accordion__header {
