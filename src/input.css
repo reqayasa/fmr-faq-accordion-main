@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "work-sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../assets/fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "work-sans";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../assets/fonts/static/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "work-sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../assets/fonts/static/WorkSans-Bold.ttf");
+}
+
+.accordions {
+    @apply flex flex-col;
+}
+
+.accordion {
+    @apply h-full w-full border-b-2 border-light-pink py-[1.125rem] last:border-b-0 last:pb-0  sm:py-[1.25rem];
+}
+
+.accordion__header {
+    @apply flex w-full items-center justify-between bg-white text-left text-base font-semibold leading-5 text-dark-purple sm:text-[1.125rem];
+}
+
+.accordion__header:hover,
+.accordion__header:focus {
+    @apply text-purple;
+}
+
+.accordion__body {
+    @apply text-sm text-grayish-purple sm:text-base;
+}
+
+.accordion.show > .accordion__header {
+    @apply after:inline-block after:pl-6 after:content-minus-icon;
+}
+
+.accordion.hide > .accordion__header {
+    @apply after:inline-block after:pl-6 after:content-plus-icon;
+}
+
+.accordion.show > .accordion__body {
+    @apply h-full pt-6 opacity-100 transition-all duration-300 ease-out;
+}
+
+.accordion.hide > .accordion__body {
+    @apply h-0 pt-0 opacity-0 transition-all duration-300 ease-in;
+}

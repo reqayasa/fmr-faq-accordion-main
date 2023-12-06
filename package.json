@@ -1,0 +1,25 @@
+{
+    "name": "fmr-faq-accordion-main",
+    "version": "1.0.0",
+    "description": "Frontend Mentor Project",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/reqayasa/fmr-faq-accordion-main.git"
+    },
+    "author": "Reqayasa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/reqayasa/fmr-faq-accordion-main/issues"
+    },
+    "homepage": "https://github.com/reqayasa/fmr-faq-accordion-main#readme",
+    "devDependencies": {
+        "prettier": "^3.1.0",
+        "prettier-plugin-tailwindcss": "^0.5.9",
+        "tailwindcss": "^3.3.6"
+    }
+}

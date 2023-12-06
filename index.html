@@ -1,48 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="dist/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | FAQ accordion</title>
+    </head>
+    <body class="relative min-h-max bg-light-pink">
+        <div
+            class="absolute -z-50 h-[14.5rem] w-full bg-[url('../assets/images/background-pattern-mobile.svg')] bg-cover lg:h-80 lg:bg-[url('../assets/images/background-pattern-desktop.svg')]"
+        ></div>
+        <main class="flex w-full grow-0 items-center justify-center">
+            <section
+                class="mx-6 mt-[8.875rem] rounded-lg bg-white p-6 shadow-2xl shadow-purple-50 sm:mt-[10.5rem] sm:max-w-[37.5rem] sm:rounded-xl sm:p-10"
+            >
+                <div class="flex items-center">
+                    <img
+                        src="assets/images/icon-star.svg"
+                        class="mr-6 inline w-6 sm:w-10"
+                        alt=""
+                    />
+                    <h1
+                        class="font-sans text-[2rem] font-bold text-dark-purple sm:text-6xl sm:tracking-tighter"
+                    >
+                        FAQs
+                    </h1>
+                </div>
+                <ul class="accordions sm:pt-[1rem]">
+                    <li class="accordion hide">
+                        <h2 class="accordion__header">
+                            What is Frontend Mentor, and how will it help me?
+                        </h2>
+                        <p class="accordion__body">
+                            Frontend Mentor offers realistic coding challenges
+                            to help developers improve their frontend coding
+                            skills with projects in HTML, CSS, and JavaScript.
+                            It's suitable for all levels and ideal for portfolio
+                            building.
+                        </p>
+                    </li>
+                    <li class="accordion hide">
+                        <h2 class="accordion__header">
+                            Is Frontend Mentor free?
+                        </h2>
+                        <p class="accordion__body">
+                            Yes, Frontend Mentor offers both free and premium
+                            coding challenges, with the free option providing
+                            access to a range of projects suitable for all skill
+                            levels.
+                        </p>
+                    </li>
+                    <li class="accordion hide">
+                        <h2 class="accordion__header">
+                            Can I use Frontend Mentor projects in my portfolio?
+                        </h2>
+                        <p class="accordion__body">
+                            Yes, you can use projects completed on Frontend
+                            Mentor in your portfolio. It's an excellent way to
+                            showcase your skills to potential employers!
+                        </p>
+                    </li>
+                    <li class="accordion hide">
+                        <h2 class="accordion__header">
+                            How can I get help if I'm stuck on a challenge?
+                        </h2>
+                        <p class="accordion__body">
+                            The best place to get help is inside Frontend
+                            Mentor's Discord community. There's a help channel
+                            where you can ask questions and seek support from
+                            other community members
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- </div> -->
 
-  FAQs
+        <footer
+            class="absolute -bottom-10 flex w-full justify-center text-xs text-grayish-purple"
+        >
+            Challenge by &nbsp;
+            <a
+                class="hover:text-purple text-dark-purple"
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by &nbsp;
+            <a
+                class="hover:text-purple text-dark-purple"
+                href="https://github.com/reqayasa/fmr-faq-accordion-main"
+                >Reqayasa</a
+            >.
+        </footer>
 
-  What is Frontend Mentor, and how will it help me?
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <script src="dist/script.js"></script>
+    </body>
 </html>
